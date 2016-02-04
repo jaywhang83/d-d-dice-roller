@@ -273,13 +273,11 @@ $(document).ready(function() {
         $("#"+idBank[i]+"text").hide();
         $("#"+idBank[i]+"text").removeClass("active")
         $("#"+idBank[i]).removeClass("active");
-        $("."+idBank[i]+"clear").hide()
-      }
+       }
       else if (id === idBank[i]){
         $("#"+id+"text").show();
         $("#"+idBank[i]+"text").addClass("active");
         $("#"+id).addClass("active");
-        $("."+idBank[i]+"clear").show();
       }
     }
   };
@@ -293,13 +291,11 @@ $(document).ready(function() {
   idBank.forEach(function(id){
 
     $(".player").click(function() {
-      var id = this.id;
+      id = this.id;
       checkingId(id);
-    });
-
-    $(".playerclear").click(function(){
-      var id = this.id;
-      $("#"+id+"ext").empty();
+      $(".playerclear").click(function(){
+        $("#"+id+"text").empty();
+      });
     });
   });
 });

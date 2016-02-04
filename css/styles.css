@@ -2,28 +2,36 @@
   font-family: 'Sorts Mill Goudy', serif;
 }
 
+  /* HEADER */
+
+#logo {
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body {
-  background-image: url(../img/background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+background-color: #EFEFEF;
 }
 
-h1 {
-    font-family: fantasy;
-}
+img.diceImg {
+  height: 40px;
 
-h1, p {
-
-  color: white;
-}
-table img {
-  max-width: 100px;
 }
 
 #roller {
   padding: 0 25px;
 }
 
+tr td img {
+  max-width: 75px;
+}
+
+tr{
+  line-height: .5em;
+  padding: 0px;
+}
 #buttons {
   margin-top: 35px;
 }
@@ -62,27 +70,20 @@ input[type=text] {
   max-width: 25px;
 }
 
-tr td img {
-  max-width: 75px;
-}
 
-tr{
-  line-height: .5em;
-  padding: 0px;
-}
 
 textarea {
   min-height: 445px;
   border: none;
-  background-color: #D6CCA9;
-  font-family: fantasy;
+  /*background-color: #D6CCA9;*/
+  /*font-family: fantasy;*/
 }
 
 textarea {
-  min-width: 350px;
-  min-height: 630px;
-  padding: 15px;
-  font-size: 20px;
+  min-width: 100%;
+  min-height: 445px;
+  padding-left: 25px;
+  /*font-size: 20px;*/
 }
 
 td {
@@ -98,7 +99,7 @@ td {
   margin-top: 170px;
 }
 
-
+/*
 .container2{
   margin:80px auto;
   width: 60px;
@@ -258,4 +259,4 @@ td {
 		0 0 5px yellow,
 		-2px -5px 5px yellow,
 		4px -10px 10px yellow; }
-}
+}*/
