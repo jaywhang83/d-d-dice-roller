@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Title</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery-1.12.0.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/materialize.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    </head>
+  </head>
+  <header>
+    <div class="container">
+      <div class="col s12">
+        <div class = "row">
+          <div class="col s4">
+            <div class="container2">
+              <div class="red flame"></div>
+              <div class="orange flame"></div>
+              <div class="yellow flame"></div>
+              <div class="white flame"></div>
+            </div>
+
+          </div>
+          <div class="col s4">
+            <div class="dark fire">
+              <h1 class="Blazing" contenteditable="true">Dice Roller</h1>
+            </div>
+            <p class="center-align">
+              Choose the amount, type, and modifier for the dice you want to roll and your results are recorded in the tabbed browser on the left.
+            </p>
+          </div>
+          <div class="col s4">
+            <div class="container2">
+              <div class="red flame"></div>
+              <div class="orange flame"></div>
+              <div class="yellow flame"></div>
+              <div class="white flame"></div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col m5 l5">
+          <div class="card blue-grey lighten-4" id="roller">
+            <table>
+              <thead>
+                <tr>
+                  <th>Dice</th>
+                  <th># of Rolls</th>
+                  <th>+</th>
+                  <th>-</th>
+                  <th>Modifier</th>
+                  <th></th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td><img src="img/coin.png" alt=""  name= "2-sided"/></td>
+                  <td><input type="text" name="d2" value="0" maxlength="3" id="d2NumOfRolls">d2</td>
+                  <td><input type="radio" name="d2radio" value = "+" checked="checked"></input></td>
+                  <td><input type="radio" name="d2radio" value = "-"></input></td>
+                  <td><input type="text" name="d2" value="0" maxlength="3" id="d2ModNumber"></td>
+                  <!-- <td rowspan="9"><button class="btn btn-sm btn-default" id="diceRoll" type="click" name="d10">Roll</button></td> -->
+                </tr>
+                <tr>
+                  <td><img src="img/d4.png" alt="" name = "4-sided" class = "dice"/></td>
+                  <td><input type="text" name="d4" value="0" maxlength="3" id="d4NumOfRolls">d4</td>
+                  <td><input type="radio" name="d4radio" value = "+" checked="checked"></input></td>
+                  <td><input type="radio" name="d4radio" value = "-"></input></td>
+                  <td><input type="text" name="d4" value="0" maxlength="3" id="d4ModNumber"></td>
+                </tr>
+                <tr>
+                  <td><img src="img/d6.png" alt="" name = "6-sided" class = "dice"/></td>
+                  <td><input type="text" name="d6" value="0" maxlength="3" id="d6NumOfRolls">d6</td>
+                  <td><input type="radio" name="d6radio" value = "+" checked="checked"></input></td>
+                  <td><input type="radio" name="d6radio" value = "-"></input></td>
+                  <td><input type="text" name="d6" value="0" maxlength="3" id="d6ModNumber"></td>
+                </tr>
+                <tr>
+                  <td><img src="img/d8.png" alt="" name = "8-sided" class = "dice"/></td>
+                  <td><input type="text" name="d8" value="0" maxlength="3" id="d8NumOfRolls">d8</td>
+                  <td><input type="radio" name="d8radio" value = "+" checked="checked"></input></td>
+                  <td><input type="radio" name="d8radio" value = "-"></input></td>
+                  <td><input type="text" name="d8" value="0" maxlength="3" id="d8ModNumber"></td>
+                </tr>
+                <tr>
+                  <td><img src="img/d10.png" alt="" name = "10-sided" class = "dice"/></td>
+                  <td><input type="text" name="d10" value="0" maxlength="3" id="d10NumOfRolls">d10</td>
+                  <td><input type="radio" name="d10radio" value = "+" checked="checked"></input></td>
+                  <td><input type="radio" name="d10radio" value = "-"></input></td>
+                  <td><input type="text" name="d10" value="0" maxlength="3" id="d10ModNumber"></td>
+                </tr>
+                <tr>
+                  <td><img src="img/d12.png" alt="" name = "12-sided" class = "dice"/></td>
+                  <td><input type="text" name="d12" value="0" maxlength="3" id="d12NumOfRolls">d12</td>
+                  <td><input type="radio" name="d12radio" value = "+" checked="checked"></input></td>
+                  <td><input type="radio" name="d12radio" value = "-"></input></td>
+                  <td><input type="text" name="d12" value="0" maxlength="3" id="d12ModNumber"></td>
+                </tr>
+                <tr>
+                  <td><img src="img/d20.png" alt="" name = "20-sided" class = "dice"/></td>
+                  <td><input type="text" name="d20" value="0" maxlength="3" id="d20NumOfRolls">d20</td>
+                  <td><input type="radio" name="d20radio" value = "+" checked="checked"></input></td>
+                  <td><input type="radio" name="d20radio" value = "-"></input></td>
+                  <td><input type="text" name="d20" value="0" maxlength="3" id="d20ModNumber"></td>
+                </tr>
+                <tr>
+                  <td><img src="img/d100.png" alt="" name = "100-sided" class = "dice"/></td>
+                  <td><input type="text" name="d100" value="0" maxlength="3" class="d100" id="d100NumOfRolls">d100</td>
+                  <td><input type="radio" name="d100radio" value = "+" checked="checked"></input></td>
+                  <td><input type="radio" name="d100radio" value = "-"></input></td>
+                  <td><input type="text" name="d100" value="0" maxlength="3" id="d100ModNumber"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" name="d" value="0" maxlength="3" id="dxNumOfRolls1"></td>
+                  <td><input type="text" name="d" value="0" maxlength="3" id="dxNumOfRolls2">dx</td>
+                  <td><input type="radio" name="dxradio" value = "+" checked="checked"></input></td>
+                  <td><input type="radio" name="dxradio" value = "-"></input></td>
+                  <td><input type="text" name="d" value="0" maxlength="3" id="dxModNumber"></td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="col m2 l2" id="buttons">
+          <a class="waves-effect waves-light btn blue-grey" id="diceRoll">Roll</a>
+          <a class="waves-effect waves-light btn blue-grey inputclear">Clear</a>
+        </div>
+
+        <div class="col m5 l5">
+          <div class="card blue-grey lighten-2" id="results">
+            <div class="card">
+              <div class="row">
+                <div class="col s12">
+                  <ul class="tabs">
+                    <li class="tab col s1 blue-grey lighten-4 player" id="player1"><a class="active" href="#test1">Player 1</a></li>
+                    <li class="tab col s1 blue-grey lighten-4 player" id="player2"><a href="#test2">Player 2</a></li>
+                    <li class="tab col s1 blue-grey lighten-4 player" id="player3"><a href="#test3">Player 3</a></li>
+                    <li class="tab col s1 blue-grey lighten-4 player" id="player4"><a href="#test4">Player 4</a></li>
+                  </ul>
+
+                  <textarea id="player1text" class="result active" readonly></textarea>
+                  <textarea id="player2text" class="result" readonly></textarea>
+                  <textarea id="player3text" class="result" readonly></textarea>
+                  <textarea id="player4text" class="result" readonly></textarea>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col m5 l5 right-align">
+              <a class="waves-effect waves-light btn blue-grey playerclear player1clear" id="player1t">Clear</a>
+              <a class="waves-effect waves-light btn blue-grey playerclear player2clear" id="player2t">Clear</a>
+              <a class="waves-effect waves-light btn blue-grey playerclear player3clear" id="player3t">Clear</a>
+              <a class="waves-effect waves-light btn blue-grey playerclear player4clear" id="player4t">Clear</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
